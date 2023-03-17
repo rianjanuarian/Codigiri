@@ -3,7 +3,7 @@ class RegisterModel {
   String password;
   String firstName;
   String lastName;
-  int telephone;
+  String telephone;
   String profileImage;
   String address;
   String city;

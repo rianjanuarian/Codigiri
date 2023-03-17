@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+
 import 'package:second_assessment/ui/register_page/register_page2.dart';
 
 class RegisterPage extends StatelessWidget {
@@ -177,6 +176,7 @@ class RegisterPage extends StatelessWidget {
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(10)),
                             child: TextFormField(
+                              obscureText: true,
                               controller: passwordcontroller,
                               decoration: InputDecoration(
                                 enabledBorder: OutlineInputBorder(
@@ -242,28 +242,6 @@ class RegisterPage extends StatelessWidget {
                 ),
               ],
             ),
-          ),
-          Container(
-            padding: const EdgeInsets.only(bottom: 15),
-            child: Align(
-                alignment: Alignment.bottomCenter,
-                child: (MediaQuery.of(context).viewInsets.bottom != 0)
-                    ? Container()
-                    : Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          const Text("Already have an account?"),
-                          InkWell(
-                            child: Text(
-                              " Sign In",
-                              style: TextStyle(color: Colors.amber[800]),
-                            ),
-                            onTap: () {
-                              // Get.to(() => const LoginPage());
-                            },
-                          ),
-                        ],
-                      )),
           ),
         ],
       ),

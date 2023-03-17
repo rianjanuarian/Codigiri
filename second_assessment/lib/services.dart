@@ -24,7 +24,7 @@ abstract class Services {
     String password,
     String firstName,
     String lastName,
-    int telephone,
+    String telephone,
     String profileImage,
     String address,
     String city,
@@ -62,5 +62,6 @@ abstract class Services {
     } catch (e) {
       Exception(e.toString());
     }
+    return null;
   }
 }
